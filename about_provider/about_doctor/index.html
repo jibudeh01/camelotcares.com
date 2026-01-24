@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="providers.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Providers | Camelot Cares</title>
+    <link rel="stylesheet" href="../wp-content/themes/mindset/style.css" />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeInUp 1s ease forwards;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* Normalize provider text fonts */
+.provider-card p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.provider-card h2 {
+  font-family: "Playfair Display", serif;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Page Banner -->
+    <section
+      class="page-banner"
+      style="background:#f7f6f4;padding:80px 0;text-align:center;"
+    >
+      <h2
+        style="font-family:'Playfair Display', serif; color:#a46c3e; font-size:2.5rem; margin-bottom:10px;"
+      >
+        Meet Your Care Team
+      </h2>
+      <p style="color:#666;font-size:1.1rem;">
+        Compassionate care built on trust, expertise, and cultural understanding
+      </p>
+    </section>
+
+    <!-- Providers Section -->
+   <!-- Providers Section -->
+<section class="providers-section fade-in" style="padding:80px 0; background:#fff;">
+  <div class="container" style="max-width:1100px; margin:0 auto; text-align:center;">
+
+    <h1 style="font-family:'Playfair Display', serif; color:#a46c3e; font-size:2.2rem; margin-bottom:3rem;">
+      Our Providers
+    </h1>
+
+    <div class="providers-grid" style="display:flex; flex-wrap:wrap; justify-content:center; gap:3rem;">
+
+      <!-- Adele -->
+      <div class="provider-card fade-in"
+        style="flex:1 1 460px; max-width:500px; background:#fafafa; border-radius:12px; padding:2rem;
+               box-shadow:0 4px 12px rgba(0,0,0,0.05); text-align:left; animation-delay:0.2s;">
+
+        <img
+          src="images/adele.jpeg"
+          alt="Adele Tseuton, PMHNP-BC"
+          style="width:180px; height:180px; border-radius:50%; border:3px solid #a46c3e;
+                 object-fit:cover; display:block; margin:0 auto 1rem;"
+        />
+
+        <h2 style="font-family:'Playfair Display', serif; color:#a46c3e; font-size:1.5rem; text-align:center;">
+          Adele Tseuton, PMHNP-BC
+        </h2>
+
+        <p style="text-align:center; font-weight:500; color:#666;">
+          Board-Certified Psychiatric–Mental Health Nurse Practitioner
+        </p>
+
+        <p class="provider-bio">
+          Adele is a board-certified Psychiatric–Mental Health Nurse Practitioner with extensive
+          experience in inpatient psychiatry, forensic settings, addiction recovery, and rehabilitation.
+          Known for her calm presence and strong clinical judgment, she brings clarity and steadiness to complex cases.
+        </p>
+
+        <p class="provider-bio">
+          Her care philosophy centers on trauma-informed, person-first practice — meeting each patient
+          with empathy and collaboration. Adele integrates evidence-based treatment, therapy, and medication
+          management to create step-by-step care plans that fit real life.
+        </p>
+
+        <div class="provider-cta-wrap">
+          <a href="/make-appointment/index.html" class="provider-appointment-btn">
+            Book Appointment
+          </a>
+        </div>
+      </div>
+
+      <!-- Elizabeth -->
+      <div class="provider-card fade-in"
+        style="flex:1 1 460px; max-width:500px; background:#fafafa; border-radius:12px; padding:2rem;
+               box-shadow:0 4px 12px rgba(0,0,0,0.05); text-align:left; animation-delay:0.4s;">
+
+        <img
+          src="images/elizabeth.jpeg"
+          alt="Elizabeth Morafa, PMHNP-BC"
+          style="width:180px; height:180px; border-radius:50%; border:3px solid #a46c3e;
+                 object-fit:cover; display:block; margin:0 auto 1rem;"
+        />
+
+        <h2 style="font-family:'Playfair Display', serif; color:#a46c3e; font-size:1.5rem; text-align:center;">
+          Elizabeth Morafa, PMHNP-BC
+        </h2>
+
+        <p style="text-align:center; font-weight:500; color:#666;">
+          Board-Certified Psychiatric–Mental Health Nurse Practitioner
+        </p>
+
+        <p class="provider-bio">
+          Elizabeth Morafa is a board-certified Psychiatric–Mental Health Nurse Practitioner with over two decades
+          of experience in community behavioral health, forensic psychiatry, and addiction treatment.
+        </p>
+
+        <p class="provider-bio">
+          She provides a warm, judgment-free environment where patients can speak openly about their goals.
+          Elizabeth combines evidence-based medicine and trauma-informed care to develop practical,
+          measurable treatment plans that improve outcomes and build resilience.
+        </p>
+
+        <div class="provider-cta-wrap">
+          <a href="/make-appointment/index.html" class="provider-appointment-btn">
+            Book Appointment
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HIPAA Callout -->
+    <div class="providers-hipaa">
+      <p class="providers-hipaa-title">
+        HIPAA-compliant telehealth options are available
+      </p>
+      <p class="providers-hipaa-sub">
+        Free 15-minute consultation for new clients.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+      <?php include '../wp-content/themes/mindset/footer.php'; ?>
+    </footer>
+
+    <script src="../wp-includes/js/jquery/jquery.min.js"></script>
+    <script src="../wp-content/themes/mindset/js/scripts.js"></script>
+  </body>
+</html>

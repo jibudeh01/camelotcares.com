@@ -1,0 +1,81 @@
+/* Page container */
+.providers {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Page header */
+.providers-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.providers-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.providers-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Grid layout */
+.providers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Provider card */
+.provider-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Provider image */
+.provider-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Provider name */
+.provider-card h2 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1.2rem;
+}
+
+/* Provider title */
+.provider-title {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+}
+
+/* Appointment button */
+..provider-appointment-btn,
+.provider-appointment-btn:visited {
+  display: inline-block;
+  background-color: #a46c3e;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.provider-appointment-btn:hover,
+.provider-appointment-btn:focus {
+  background-color: #8f5d34;
+  color: #ffffff;
+}
