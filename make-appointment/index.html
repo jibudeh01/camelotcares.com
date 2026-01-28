@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
@@ -46,16 +46,16 @@
           } catch (e) {}
         }
         function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
+          (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0));
           var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
             ),
             r =
               (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
               e.fillText(n, 0, 0),
               new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
               ));
           return t.every(function (e, t) {
             return e === r[t];
@@ -67,24 +67,24 @@
               return n(
                 e,
                 "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f",
               )
                 ? !1
                 : !n(
                     e,
                     "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                    "\ud83c\uddfa\u200b\ud83c\uddf3",
                   ) &&
                     !n(
                       e,
                       "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f",
                     );
             case "emoji":
               return !n(
                 e,
                 "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
-                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff",
               );
           }
           return !1;
@@ -106,7 +106,7 @@
         }
         function t(e) {
           var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+          ((t.src = e), (t.defer = !0), i.head.appendChild(t));
         }
         "undefined" != typeof Promise &&
           ((o = "wpEmojiSettingsSupports"),
@@ -143,7 +143,7 @@
                       f.toString() +
                       "(" +
                       [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
+                        ",",
                       ) +
                       "));",
                     r = new Blob([e], { type: "text/javascript" }),
@@ -151,7 +151,7 @@
                       name: "wpTestEmojiSupports",
                     });
                   return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
+                    (c((n = e.data)), a.terminate(), t(n));
                   });
                 } catch (e) {}
               c((n = f(s, u, p)));
@@ -160,18 +160,18 @@
           })
             .then(function (e) {
               for (var t in e)
-                (n.supports[t] = e[t]),
+                ((n.supports[t] = e[t]),
                   (n.supports.everything =
                     n.supports.everything && n.supports[t]),
                   "flag" !== t &&
                     (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]));
+              ((n.supports.everythingExceptFlag =
                 n.supports.everythingExceptFlag && !n.supports.flag),
                 (n.DOMReady = !1),
                 (n.readyCallback = function () {
                   n.DOMReady = !0;
-                });
+                }));
             })
             .then(function () {
               return e;
@@ -540,8 +540,8 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -1052,7 +1052,8 @@
       @font-face {
         font-family: "star";
         src: url("../wp-content/plugins/woocommerce/assets/fonts/star.eot");
-        src: url("../wp-content/plugins/woocommerce/assets/fonts/stard41d.eot?#iefix")
+        src:
+          url("../wp-content/plugins/woocommerce/assets/fonts/stard41d.eot?#iefix")
             format("embedded-opentype"),
           url("../wp-content/plugins/woocommerce/assets/fonts/star.woff")
             format("woff"),
@@ -1281,7 +1282,8 @@
                                         </div>
                                         <div class="text">
                                           <p>
-                                            10770 Columbia Pike #300 Silver Spring, MD
+                                            10770 Columbia Pike #300 Silver
+                                            Spring, MD
                                           </p>
                                         </div>
                                       </li>
@@ -1326,7 +1328,7 @@
                                           class="fab fa-facebook"
                                         ></i>
                                       </a>
-                                      
+
                                       <a href="https://www.instagram.com/">
                                         <i
                                           aria-hidden="true"
@@ -1467,7 +1469,9 @@
                           </li>
                           <li>
                             <i class="fa fa-phone-alt"></i>
-                            <a href="tel:http://13016371736"> +1301-637-1736 </a>
+                            <a href="tel:http://13016371736">
+                              +1301-637-1736
+                            </a>
                           </li>
                         </ul>
                         <!-- /.mobile-nav__contact -->
@@ -1481,7 +1485,7 @@
                               href="https://www.facebook.com/"
                               class="fab fa-facebook-f"
                             ></a>
-                            
+
                             <a
                               href="https://www.instagram.com/"
                               class="fab fa-instagram"
@@ -1631,7 +1635,7 @@
                                     <ul></ul>
                                   </div>
                                   <form
-                                    action="#"
+                                    action="send-email.php"
                                     method="post"
                                     class="wpcf7-form init"
                                     aria-label="Contact form"
@@ -2018,7 +2022,7 @@
                                   class="fab fa-twitter"
                                 ></i>
                               </a>
-                              
+
                               <a href="https://www.instagram.com/">
                                 <i
                                   aria-hidden="true"
@@ -2069,10 +2073,9 @@
                                 </a>
                               </div>
                               <p class="footer-widget__about-text">
-                                Camelot Health Services provides
-                                compassionate, confidential mental health
-                                support to help individuals and families heal,
-                                grow, and thrive.
+                                Camelot Health Services provides compassionate,
+                                confidential mental health support to help
+                                individuals and families heal, grow, and thrive.
                               </p>
                             </div>
                           </div>
@@ -2187,7 +2190,10 @@
                                   </div>
                                   <div class="text">
                                     <span>Visit Office</span>
-                                    <p class="">10770 Columbia Pike #300 Silver Spring, MD 20901</p>
+                                    <p class="">
+                                      10770 Columbia Pike #300 Silver Spring, MD
+                                      20901
+                                    </p>
                                   </div>
                                 </li>
                                 <li>
